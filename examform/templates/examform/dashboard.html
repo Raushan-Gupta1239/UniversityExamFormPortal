@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h1 style="margin-left: 350px;">Welcome to the GLA Exam Form Portal</h1>
+        <a href="/logout" style="background-color: red; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Logout</a>
+    </div>
+    
+    <p>Hello, <strong>{{ user.username }}</strong>!</p>
+    <p>Fill the exam form by clicking the clicking the button below:</p>
+    <button onclick="window.location.href='/exam-form/'">Fill Exam Form</button>
+</body>
+</html>
